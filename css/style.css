@@ -1,0 +1,527 @@
+:root {
+    /* Con estas variables se puede controlar los colores generales */
+    --colorPrimario: rgb(242, 95, 58);
+    --colorSecundario: rgb(35, 44, 81);
+    --colorTextCardLista: #B3B2B7;
+    
+   
+}
+/* No pude ubicar la fuente que se pedia  y opte por la version PRO */
+ @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+              background: url(../img/bg-tablet-pattern.svg) no-repeat 90% -10%, url(../img/bg-tablet-pattern.svg) no-repeat -25% 60%;
+              flex-direction:column;
+              font-size: 16px;
+          }
+
+body, 
+header,
+main{
+    align-items: center;
+    display: flex;
+}
+
+header{
+              justify-content: space-between;
+              margin:76px 0px;
+          }
+
+a{
+    color: var(--colorSecundario);
+    text-decoration: none;
+}
+
+h1{
+    font-size: 0;
+}
+
+header nav ul{
+    display: flex;
+    gap: 28px;
+    list-style-type: none;
+}
+
+header ul a{
+    font-weight: 500;
+}
+
+header ul a:hover{
+    color: #afb0b4;
+}
+
+.contenedorCompacto{
+             max-width: 1110px;
+             padding: 0px 2rem;
+             width: 100%;
+             align-items: center;
+            display: flex;
+         }
+
+#boton {
+    box-shadow: none;
+}
+
+.botonGet{
+    background-color: var(--colorPrimario);
+    border-radius: 50px;
+    box-shadow: 0 12px 15px 1px rgb(252, 198, 198);
+    color:white;
+    display: inline-block;
+    padding: 12px 30px;
+}
+
+.botonGet:hover{
+    background-color:#eba593 ;
+    color: #fff4e2;
+}
+
+main{
+         flex-direction: column;
+         width: 100%;
+     }
+
+.filaH2{
+         gap: 3.5rem;
+         justify-content: space-evenly;
+         padding-bottom: 8rem;
+         align-items: center;
+        display: flex;
+     }
+
+.columna {
+    flex: 1;
+}
+
+.estilosH{
+    color: var(--colorSecundario);
+    font-weight: 700px;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+.columna p{
+    padding-right: 35%;
+    padding: 1.75rem 0;
+}
+
+.imagenFlexible{
+    height: auto;
+    width: 100%;
+}
+
+h3{
+    font-size: 2.25rem;
+}
+
+.filaH3{
+    align-items: flex-start;
+    display: flex;
+    gap: 3.5rem;
+    justify-content: space-evenly;
+    padding-bottom: 8rem;
+}
+
+.tituloLista{
+    align-items: center;
+    display: flex;
+}
+
+.numeroLista{
+    background-color: var(--colorPrimario);
+    border-radius:50px;
+    color: white;
+    font-weight: 700;
+    padding: 10px 25px;
+}
+
+
+.parrafoLista{
+    color:  var(--colorTextCardLista);
+    padding: 1rem 0rem 2rem 4.5rem !important;
+}
+
+h4{
+    padding-left:0.75rem ;
+}
+
+.testimonios{
+    text-align: center;
+}
+
+.testimonios h2{
+    color: var(--colorSecundario);
+    font-size: 2.4rem;
+    padding-bottom: 4.68rem;
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    margin-bottom: 2.1rem;
+}
+
+.card{
+    background-color: #FAFAFA;
+    max-width: 445px;
+    position: relative;
+}
+
+.card h5{
+    color: var(--colorSecundario);
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 1.3rem;
+    padding-top: 3.5rem;
+}
+
+.card p{
+    color: var(--colorTextCardLista);
+    padding: 2.4rem 1.3rem;
+}
+
+.imagenCard{
+    height: 70px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 70px;
+}
+
+#carrousel{
+    display: none;
+}
+
+.falsoFooter{
+    /* comento la imagen por que me afecta la animacion que implemente ( descomentar para probar si lo desea) */
+
+    /* background: url(../img/bg-simplify-section-desktop.svg) 40% 100% no-repeat; */
+    background-color: var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    margin-top: 12rem;
+    width: 100%;
+}
+
+
+.contenedorFalsoFooter{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.falsoFooter h2{
+    color: white;
+    font-size: 40px;
+    padding:4rem 0;
+}
+
+.falsoFooter .contenedorCompacto{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonBlanco{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow:0px 4px 7px rgba(156, 126, 126, 0.25);
+    color: var(--colorPrimario);
+    display: inline-block;
+    padding: 12px 30px;
+}
+
+.botonBlanco:hover{
+    color:#ffd1cd;
+}
+
+footer{
+    background-color: rgb(29, 30, 37);
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0rem;
+    width: 100%;
+}
+
+.logoFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filaDelFooter{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    font-weight: 500;
+}
+
+
+footer a:hover{
+    fill: var(--colorPrimario);
+    filter: invert(51%) sepia(79%) saturate(3647%) hue-rotate(340deg) brightness(105%) contrast(91%);
+}
+
+footer label{
+    font-size: 0;
+}
+
+footer p{
+         color: #8C8C94;
+         font-size: 12px;
+         text-align: right;
+         width: 100%;
+     }
+
+footer li{
+    list-style: none;
+    padding-bottom: 0.75rem;
+}
+
+.logoFooter{
+    padding-bottom: 4.1rem;
+}
+
+.logosRedes{
+    display: flex;
+    gap:13px;
+}
+
+footer input{
+    border-radius: 50px;
+    border: none;
+    padding: 10px 12.5px;
+}
+
+footer button{
+    border: none;
+}
+
+.contenedorNavFooter{
+    display: flex;
+    gap: 4rem;
+}
+#email{
+    background-color:white;
+}
+ /* Esto tendria que cambiar a color verde al ingresar el email con un formato correcto */
+#email:valid{
+         background-color:rgba(7, 223, 7, 0.486)
+     }
+
+#maquina {
+    position:relative;
+}
+
+/* Implemento una animacion tipo maquina de escribir */
+ h2 span {
+       animation: maquina 6s infinite alternate steps(42);
+       background-color: var(--colorPrimario);
+       border-left: 1px solid rgb(141, 36, 10);
+       position: absolute;
+       right: 0;
+       width: 0;
+   }
+   /* Esto hace que el la animacion recorra  */
+@keyframes maquina {
+    
+    from {
+width: 100%;
+}
+    to {
+width: 0%;
+}
+}
+
+
+.toggle{
+    background-image: url(../img/icon-hamburger.svg);
+    display: none;
+    height: 18px;
+    width: 25px;
+}
+
+
+/* Este media lo uso para cortar la animacion de la maquina de escribir antes de que se rompa  */
+@media(max-width:969px){
+    
+    h2 span {
+        animation: none;
+        border-left: 0;
+    }
+}
+
+/* Aca comienzo con los estilos que cambiaran al usar formato mobile */
+@media(max-width:832px){
+    .card:nth-child(1), .cards .card:nth-child(3){
+        display: none;
+    }
+    body{
+        font-size: 13px;
+    }
+    .filaH2{
+        flex-direction: column-reverse;
+    }
+
+    .columna{
+        text-align: center;
+    }
+
+    .columna p{
+        padding:10px 0px;
+    }
+
+    .filaH3{
+        flex-direction: column;
+    }
+    .parrafoLista{
+        padding: 15px 10px !important;
+        text-align: left;
+    }
+    .tituloLista{
+        background-color:rgb(255,239,234);
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    
+    #carrousel{
+        display: block;
+    }
+
+/* Queria acortar codigo pero me eliminaba algunos estilos, por supuesto que probe borrando los de abajo */
+
+    /* .dot, 
+    .dot_active{
+        border-radius: 50%;
+        border-color: var(--colorPrimario);
+        display: inline-block;
+        height: 0.7rem;
+        width: 0.7rem;
+
+    }*/
+    .dot{
+        border: 2px solid;
+        border-radius: 50%;
+        border-color: var(--colorPrimario);
+        color: white;
+        display: inline-block;
+        height: 0.7rem;
+        width: 0.7rem;
+    }
+   .dot_active{
+        background-color: var(--colorPrimario);
+        border-radius: 50%;
+        display: inline-block;
+        height: 0.7rem;
+        width: 0.7rem;
+    }
+
+    .contenedorFalsoFooter{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .botonBlanco{
+        margin-bottom: 40px;
+    }
+
+    .filaDelFooter{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedorNavFooter{
+        gap:2rem;
+        order: -1;
+        padding-bottom: 2rem     ;
+    }
+
+    .filaForm{
+        order:-2;
+        padding-bottom: 2rem;
+    }
+
+    .columnaImagenes{
+        align-items: center;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+
+    .logoFooter{
+        padding-bottom: 2.5rem;
+    }
+
+    .logosRedes{
+        gap:2rem;
+        padding-bottom: 2rem;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    footer .logosRedes img{
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Esto va a permitir abrir el menu hamburguesa*/
+    .toggle{
+        display: block;
+        left:90%;
+        position: absolute;
+        top:0px;
+    }
+    .navegacion ul {
+        display: none;
+    }
+    .navegacion ul.open {
+        display: flex;
+    }
+
+    header .botonGet{
+        display: none;
+    }
+    header.contenedorCompacto{
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .navegacion{
+        width: 100%;
+    }
+
+    .navegacion ul.open {
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+}
+
+    a.toggle.open{
+      background-image:url(../img/icon-close.svg);
+      height: 21px;
+      width: 21px;
+  }
+}
